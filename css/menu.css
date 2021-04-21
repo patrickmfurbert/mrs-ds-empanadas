@@ -1,0 +1,154 @@
+/* Common Styles */
+
+/* Imported Font */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Bodoni Moda', serif;
+}
+
+html{
+    /* by default 1 rem = 16px, so 62.5% of 16px = 10px */
+    font-size: 62.5%; 
+    height: 100%;
+}
+
+/* End Common Styles */
+
+/* base styles */
+body{
+    background-color: white;
+}
+
+/* Mobile Styles */
+#navigation{
+    background-color: white;
+    height: 13rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+#logo_top{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 8.8rem;
+}
+
+#hamburger_icon_wrapper{
+
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    padding: 2rem;
+
+}
+
+#hamburger_icon{
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+#section_1{
+    margin-top: 13rem;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#section_1 li{
+    list-style: none;
+}
+
+#menu_address{
+    padding-top: 1.35rem;
+    padding-bottom: 2.2rem;
+    font-size: 1.25rem;
+    font-style: italic;
+    letter-spacing: 0.125rem;
+}
+
+#logo_mid{
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+#menu_slide_reel{
+    width: 92%;
+}
+
+#slide_img_1{
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+
+}
+
+#section_2{
+    height: 25rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#menu{
+    text-align: center;
+    font-size: 3.6rem;
+    font-style: italic;
+}
+
+#menu_description{
+    text-align:justify;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+}
+
+.menu_section{
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu_section_title{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 3.2rem;
+    font-style: italic;
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.menu_item_description{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.menu_price{
+    text-align:left;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-weight: bolder;
+}
+
+/* End Mobile Styles */
+

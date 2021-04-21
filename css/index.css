@@ -1,10 +1,14 @@
 /* Common Styles */
+
+/* imported font */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
+    font-family: 'Bodoni Moda', serif;
 }
 
 html{
@@ -71,7 +75,7 @@ footer {
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 7.5rem;
     color: white;
 }
@@ -81,7 +85,7 @@ h1 {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 1.8rem;
     color: white;
 }
@@ -91,14 +95,14 @@ p {
 }
 
 #place_order{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 1.7rem;
     color: white;
     text-decoration: underline;
 }
 
 .nav_bar{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 1.3rem;
     color: white;
     text-decoration: none;
@@ -110,6 +114,7 @@ p {
 #google_map{
     text-align: center;
     margin: 5rem 0;
+    margin-top: 5rem;
 }
 
 .social_media{
@@ -131,6 +136,8 @@ footer p{
 }
 
 /* end base styles */
+
+/* ************************************************* */
 
 /* responsive styles */
 
