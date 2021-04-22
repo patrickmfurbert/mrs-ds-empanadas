@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/776f196900.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/menu.css">
     <title>Mrs D's Empanadas</title>
+    <script src="./js/menu.js" defer></script>
 </head>
 <body>
 
@@ -15,111 +16,126 @@
         
         <img id="logo_top" src="./img/empanadas_black.png" alt="mrs_d_empanadas">
 
-        <div id="hamburger_icon_wrapper">
-            <i id="hamburger_icon" class="fas fa-bars"></i>
+        <div id=hamburger_wrapper>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         
     </nav>
     
-    <section id="section_1">
-            <p id="menu_address">197 Park Avenue Rochester, NY 14607</p>
+    <div class="menu_content_container">
+        <section id="section_1">
 
-            <img id="logo_mid" src="./img/empanadas_white_small_1a.png" alt="">
+                <p id="menu_address">197 Park Avenue Rochester, NY 14607</p>
+                <img id="logo_mid" src="./img/empanadas_white_small_1a.png" alt="">
+                <ul id="menu_slide_reel">
+                    <li id="img_container">
+                        <div class="reel_imgs" id="slide_img_1" style="background-image: url('./img/hideway_empanada_web_optimized.jpg');"></div>
+                        <div class="reel_imgs hide" id="slide_img_2" style="background-image: url('./img/empanadas_platter.jpg');"></div>
+                        <div class="reel_imgs hide" id="slide_img_3" style="background-image: url('./img/empanadas_mrs_d_op.jpg');"></div>
+                    </li>
+                </ul>
+        </section>
+        <section id="section_2">
+            <p id="menu">Menu</p>
+            <p id="menu_description">Dominca's kitchen is rooted in an appreciation for quality ingredients and thoughtful-yet simple preparations. We have a passion for breathing new life into traditional puerto-rican inspired empanada recipes. Please visit us on social media to see the weekly specials. </p>
+        </section>
+        <!-- begin the menu -->
+            <section class="menu_section">
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Breakfast Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Egg & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Bacon, Egg & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Sausage, Egg & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Savory Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Plain Beef</p>
+                            <p class="menu_price">3.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Plain Chicken</p>
+                            <p class="menu_price">3.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Beef & Cheese</p>
+                            <p class="menu_price">4.00</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Chicken & Cheese</p>
+                            <p class="menu_price">4.00</p>
+                        </li>
 
-            <ul id="menu_slide_reel">
-                <li id="img_container">
-                    <div id="slide_img_1" style="background-image: url('./img/hideway_empanada_web_optimized.jpg');"></div>
-                </li>
-            </ul>
-    </section>
+                    </ul>
+                </section>
 
-    <section id="section_2">
-        <p id="menu">Menu</p>
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Speciality Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Shrimp</p>
+                            <p class="menu_price">5.00</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Philly Cheesesteak</p>
+                            <p class="menu_price">5.00</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Buffalo Chicken</p>
+                            <p class="menu_price">5.00</p>
+                        </li>
+                    </ul>
+                </section>
 
-        <p id="menu_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus dignissimos accusantium obcaecati modi nostrum tempora iusto doloribus id nobis autem quas amet illum molestias neque eligendi, facilis consequuntur consequatur architecto!</p>
-    </section>
-
-    <section class="menu_section">
-        <p class="menu_section_title">Breakfast Empanadas</p>
-
-        <ul class="menu_items">
-            <li class="menu_li">
-                <p class="menu_item_description">Egg & Cheese</p>
-                <p class="menu_price">4.50</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Bacon, Egg & Cheese</p>
-                <p class="menu_price">4.50</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Sausage, Egg & Cheese</p>
-                <p class="menu_price">4.50</p>
-            </li>
-        </ul>
-
-        <p class="menu_section_title">Savory Empanadas</p>
-
-        <ul class="menu_items">
-            <li class="menu_li">
-                <p class="menu_item_description">Plain Beef</p>
-                <p class="menu_price">3.50</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Plain Chicken</p>
-                <p class="menu_price">3.50</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Beef & Cheese</p>
-                <p class="menu_price">4.00</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Chicken & Cheese</p>
-                <p class="menu_price">4.00</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Shrimp</p>
-                <p class="menu_price">5.00</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Philly Cheesesteak</p>
-                <p class="menu_price">5.00</p>
-            </li>
-        </ul>
-
-
-        <p class="menu_section_title">Desert Empanadas</p>
-
-        <ul class="menu_items">
-            <li class="menu_li">
-                <p class="menu_item_description">Bananas Foster</p>
-                <p class="menu_price">4.50</p>
-            </li>
-            <li class="menu_li">
-                <p class="menu_item_description">Guava & Cheese</p>
-                <p class="menu_price">4.50</p>
-            </li>
-        </ul>
-
-        <p class="menu_section_title">Sides</p>
-
-        <ul class="menu_items">
-            <li class="menu_li">
-                <p class="menu_item_description">White Rice (with beans)</p>
-                <p class="menu_price">2.00 (5.00)</p>
-                <p class="menu_item_description">Five Wings</p>
-                <p class="menu_price">8.00</p>
-            </li>
-        </ul>
-
-        <p class="menu_section_title">Featured Plates</p>
-
-        <ul class="menu_items">
-            <li class="menu_li">
-                <p class="menu_item_description">Beef or Chicken Empanada, Rice and Beans with chicken</p>
-                <p class="menu_price">12</p>
-
-            </li>
-        </ul>
-    </section>
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Desert Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Bananas Foster</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Guava & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Sides</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">White Rice (with beans)</p>
+                            <p class="menu_price">2.00 (5.00)</p>
+                            <p class="menu_item_description">Five Wings</p>
+                            <p class="menu_price">8.00</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Featured Plates</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Beef or Chicken Empanada, Rice and Beans with chicken</p>
+                            <p class="menu_price">12</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        <!-- end the menu -->
+    </div>
 </body>
 </html>
