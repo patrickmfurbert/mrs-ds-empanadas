@@ -34,14 +34,43 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     top: 0;
+}
+
+.drop_down_container{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+}
+
+.hide_drop_down_container{
+    height: 0%;
+    display: none;
+}
+
+.show_drop_down_container{
+    height: 100vh;
+
+}
+
+.list_nav_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav_list_items{
+    color: black;
+    list-style: none;
 }
 
 #logo_top{
     margin-top: 1rem;
     margin-left: 1rem;
     height: 8.8rem;
+    position: relative;
 }
 
 #hamburger_wrapper{
@@ -50,7 +79,7 @@ body{
     height: 5rem;
     width: 5rem;
     margin: 2rem;
-    z-index: 101;
+    z-index: 100;
 }
 
 #hamburger_wrapper span{
