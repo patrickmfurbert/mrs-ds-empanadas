@@ -1,9 +1,15 @@
-// apply toggle open class for hamburger_wrapper span
+//get references to hamburger and drop down menu
+let drop_down_menu = document.getElementById("drop_down_container")
 let hamburger_icon = document.getElementById("hamburger_wrapper")
 
+// apply toggle open class for hamburger_wrapper span
 // when the hamburger icon is clicked by user the open class is toggled
 hamburger_icon.onclick = () =>{
     hamburger_icon.classList.toggle("open")
+    drop_down_menu.classList.toggle("show_drop_down_container")
+
+    //min-height needs to toggle between 12rem and 100vh on #navigation
+    //display needs to change from flex to unset ??
 }
 
 // display reel and picture index variable
