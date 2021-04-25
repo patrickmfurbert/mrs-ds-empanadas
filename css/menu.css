@@ -152,6 +152,10 @@ body{
     transform: rotate(-45deg);
 }
 
+.stop_body_scroll {
+    overflow: hidden;
+}
+
 .menu_content_container{
     max-width: 90rem;
     min-width: 45rem;
