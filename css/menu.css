@@ -50,7 +50,7 @@ body{
 
 
 #drop_down_container.show_drop_down_container{
-    min-height: 100vh !important;
+    min-height: 110vh !important;
     position: fixed !important;
     opacity: 1;
     transition: opacity .5s ease-in-out;
@@ -104,7 +104,9 @@ body{
     margin: 3rem 2rem 2rem 2rem;
     right: 0;
     z-index: 100;
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 
 #hamburger_wrapper span{
