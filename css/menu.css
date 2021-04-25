@@ -30,55 +30,82 @@ body{
 #navigation{
     background-color: white;
     min-height: 12rem;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
     position: fixed;
     z-index: 10;
     top: 0;
 }
 
 #drop_down_container{
+    top: 0;
     overflow: hidden;
     background-color: white;
     width: 100%;
     position: absolute;
-    z-index: 20;
-    height: 0;
+    z-index: -20;
+    /* min-height: 0; */
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
 }
 
 
-.show_drop_down_container{
+#drop_down_container.show_drop_down_container{
     min-height: 100vh !important;
+    position: fixed !important;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    z-index: 20 !important;
 }
 
 .list_nav_items{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
 }
 
 .nav_list_items{
     color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: normal;
+    padding: 1rem;
     list-style: none;
+}
+
+.divider{
+    width: 93%;
+    height: 0.6rem;
+    margin: 0 auto 2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.63);
+}
+
+.drop_down_address{
+    text-align: center;
+    font-size: 1rem !important;
 }
 
 #logo_top{
     margin-top: 1rem;
     margin-left: 1rem;
     height: 8.8rem;
+    display: inline-block;
     position: relative;
 }
 
 #hamburger_wrapper{
-    position: relative;
+    display: inline-block;
+    position: absolute;
     cursor: pointer;
     height: 5rem;
     width: 5rem;
-    margin: 2rem;
+    margin: 3rem 2rem 2rem 2rem;
+    right: 0;
     z-index: 100;
 }
+
 
 #hamburger_wrapper span{
     width: 80%;
@@ -99,6 +126,7 @@ body{
     transition: .35s ease-in-out;
 
 }
+
 
 #hamburger_wrapper.open span:nth-child(1){
     margin-left: 1rem;
@@ -142,7 +170,7 @@ body{
     list-style: none;
 }
 
-#menu_address{
+.menu_address{
     padding-top: 1.35rem;
     padding-bottom: 2.2rem;
     font-size: 1.35rem;
