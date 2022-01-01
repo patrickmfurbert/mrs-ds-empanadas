@@ -1,214 +1,26 @@
-/* Common Styles */
-
-/* imported font */
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    font-family: 'Bodoni Moda', serif;
-}
-
-html{
-    /* by default 1 rem = 16px, so 62.5% of 16px = 10px */
-    font-size: 62.5%; 
-    height: 100%;
-}
-
-/* End Common Styles */
-
-
-/* base styles */
-body{
-    background-color: #2F3035;
-    background-image: url(../img/test_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.container{
-    margin: 0 auto;
-    width: 100rem;
-}
-
-header {
-    /* background-color: blue; */
-    height: 13rem;
-    text-align: center;
-}
-
-#logo{
-    margin-top: 2.5rem;
-}
-
-nav {
-    background-color: rgba(0, 0, 0, 0.267);
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: fit-content;
-    width: 70rem;
-    text-align: center;
-}
-
-
-
-main {
-    /* background-color: orange; */
-    height: 35rem;
-    text-align: center;
-    padding-top: 8rem;
-    padding-left: 24rem;
-    padding-right: 24rem;
-}
-
-footer {
-    text-align: center;
-    /* background-color: rgba(0, 0, 0, 0.418); */
-    height: 10rem;
-}
-
-h1 {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: 7.5rem;
-    color: white;
-}
-
-#lets_eat{
-    margin-bottom: 4rem;
-}
-
-p {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: 1.8rem;
-    color: white;
-}
-
-#splash_message{
-    margin-bottom: 2.3rem;
-}
-
-#place_order{
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: 1.7rem;
-    color: white;
-    text-decoration: underline;
-}
-
-.nav_bar{
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: 1.3rem;
-    color: white;
-    text-decoration: none;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-
-}
-
 #google_map{
     text-align: center;
     margin: 5rem 0;
     margin-top: 5rem;
 }
 
-.social_media{
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    padding-top: 2.3rem;
+#google_map_small{
+    display: none;
 }
 
-.social_media i{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    cursor: pointer;
-    color: white;
-}
 
-footer p{
-    font-size: 1.2rem;
-}
-
-/* end base styles */
-
-/* ************************************************* */
-
-/* responsive styles */
-
+/* Repsonssive Style */
 @media screen and (max-width: 700px) {
 
-    /* push nav down */
-    #navigation{
-        margin-top: 9rem;
-    }
-
-    /* increase navigation font size */
-    #navigation a{
-        font-size: 1.6rem;
-    }
-
-    /* decrease top padding of main */
-    main{
-        padding-top: 5rem;
-    }
-
-    /* remove top margin from google map section and reduce bottom margin */
     #google_map{
-        margin-top: 0;
-        margin-bottom: 2.5rem;
+        display: none;
     }
-
     
-}
 
-
-@media screen and (max-width: 600px) {
-
-    /* increase navigation font size */
-    #navigation a {
-        font-size: 1.8rem;
-        padding: 0 25px;
-    }
-
-    /* increase font size of lets eat */
-    #lets_eat {
-        font-size: 9rem;
-    }
-
-    /* increase main padding top and margin bottom*/
-    main{
-        padding-top: 10rem;
-        margin-bottom: 12.5rem;
-    }
-
-
-    /* increase margin top/bottom on google map section */
-    #google_map{
-        margin-top: 7rem;
-        margin-bottom: 7rem;
-    }
-
-    /* increase splash message margin bottom, increase font size */
-    #splash_message{
-        margin-bottom: 3.5rem;
-        font-size: 2rem;
-    }
-
-    /* Increase icon size */
-    .social_media i{
-        font-size: 3rem;
-    }
- 
-    /* increase copy write size */
-    #copyright{
-        font-size: 1.6rem;
+    #google_map_small{
+        text-align: center;
+        margin: 5rem 0;
+        margin-top: 5rem;
+        display: block;
     }
 }
-
-/* end responsive styles */

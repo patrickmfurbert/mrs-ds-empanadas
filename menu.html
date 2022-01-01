@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- initial scale/minimum scale to 0.86 to counter the autozoom on the
+    mobile browswers on initial load -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+
+    <!-- Font aweome script -->
+    <script src="https://kit.fontawesome.com/776f196900.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Mrs D's Empanadas</title>
+    <script src="./js/menu.js" defer></script>
+</head>
+<body>
+
+    <!-- navigation structure -->
+    <nav id="navigation">
+        
+        <!-- nav logo -->
+        <img id="logo_top" src="./img/empanadas_black.png" alt="mrs_d_empanadas">
+
+        <!-- hamburger icon -->
+        <div id=hamburger_wrapper>
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        
+        <!-- drop_down_menu  -->
+        <div id="drop_down_container">
+                <ul class="list_nav_items"> 
+                    <a href="index.html">
+                        <li class="nav_list_items">Home</li>
+                    </a>
+                    <a href="menu.html">
+                        <li class="nav_list_items">Menu</li>
+                    </a>
+                    <a href="#">
+                        <li class="nav_list_items">Gallery</li>
+                    </a>
+                    <a href="#">
+                        <li class="nav_list_items">Contact Us</li>
+                    </a>
+                </ul>
+            <div class="divider"></div>
+            <p class="menu_address drop_down_address">197 Park Avenue Rochester, NY 14607</p>
+
+            
+            <div class="social_media_nav_icons">
+
+                <a href="https://www.facebook.com/MrsDsEmps" class="drop_down_social_link"><i class="fab fa-facebook drop_down_icon"></i></a>
+                <a href="https://www.instagram.com/mrs_d_empanadas/" class="drop_down_social_link"><i class="fab fa-instagram drop_down_icon"></i></a>
+            </div>
+
+        </div>
+        
+    </nav>
+    <!-- End navagation -->
+    
+    <!-- Menu Content -->
+    <div class="menu_content_container">
+
+        <section id="section_1">
+
+                <p class="menu_address">197 Park Avenue Rochester, NY 14607</p>
+                
+                <!-- logo that floats ontop of reel -->
+                <img id="logo_mid" src="./img/empanadas_white_small_1a.png" alt="">
+
+                <!-- photo reel -->
+                <div id="menu_slide_reel">
+                    <div id="img_container">
+                        <div class="reel_imgs" id="slide_img_1" style="background-image: url('./img/hideway_empanada_web_optimized.jpg');"></div>
+                        <div class="reel_imgs hide" id="slide_img_2" style="background-image: url('./img/empanadas_platter.jpg');"></div>
+                        <div class="reel_imgs hide" id="slide_img_3" style="background-image: url('./img/empanadas_mrs_d_op.jpg');"></div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- menu description -->
+        <section id="section_2">
+            <p id="menu">Menu</p>
+            <p id="menu_description">Dominca's kitchen is rooted in an appreciation for quality ingredients and thoughtful-yet simple preparations. We have a passion for breathing new life into traditional Puerto Rico inspired Empanada recipes. Please visit us on social media to see the weekly specials. </p>
+        </section>
+        <!-- end menu description -->
+
+        <!-- begin the menu -->
+            <section class="menu_section">
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Breakfast Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Egg & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Bacon, Egg & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Sausage, Egg & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Savory Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Plain Beef</p>
+                            <p class="menu_price">3.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Plain Chicken</p>
+                            <p class="menu_price">3.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Beef & Cheese</p>
+                            <p class="menu_price">4.00</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Chicken & Cheese</p>
+                            <p class="menu_price">4.00</p>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Speciality Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Shrimp</p>
+                            <p class="menu_price">5.00</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Philly Cheesesteak</p>
+                            <p class="menu_price">5.00</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Buffalo Chicken</p>
+                            <p class="menu_price">5.00</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Desert Empanadas</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Bananas Foster</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                        <li class="menu_li">
+                            <p class="menu_item_description">Guava & Cheese</p>
+                            <p class="menu_price">4.50</p>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Sides</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">White Rice (with beans)</p>
+                            <p class="menu_price">2.00 (5.00)</p>
+                            <p class="menu_item_description">Five Wings</p>
+                            <p class="menu_price">8.00</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_subsection">
+                    <p class="menu_section_title">Featured Plates</p>
+                    <ul class="menu_items">
+                        <li class="menu_li">
+                            <p class="menu_item_description">Beef or Chicken Empanada, Rice and Beans with chicken</p>
+                            <p class="menu_price">12</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+    </div>
+    <!-- end the menu content-->
+
+</body>
+</html>
