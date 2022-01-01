@@ -1,0 +1,211 @@
+/* Navigation Menu Styles */
+#navigation{
+    background-color: white;
+    min-height: 12rem;
+    width: 100%;    
+    max-width: 90rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#drop_down_container{
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    z-index: -20;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+
+
+#drop_down_container.show_drop_down_container{
+    min-height: 110vh !important;
+    position: fixed !important;
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+    z-index: 20 !important;
+}
+
+.list_nav_items{
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.nav_list_items{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: normal;
+    padding: 1rem;
+    list-style: none;
+    transition: color .2s ease-in-out;
+
+    /* This removes blue highlight */
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.nav_list_items:hover{
+    cursor: pointer;
+    color: rgb(85, 15, 15);
+    transition: color .2s ease-in-out;
+    transition: text-shadow .4s linear;
+    text-shadow: 0 0 0.05rem rgb(85, 15, 15);
+}
+
+
+
+.nav_list_links{
+   
+    
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: normal;
+    padding: 1rem;
+    list-style: none;
+    transition: color .2s ease-in-out;
+
+}
+
+.nav_list_links:hover{
+    cursor: pointer;
+    color: rgb(85, 15, 15);
+    transition: color .2s ease-in-out;
+    transition: text-shadow .4s linear;
+    text-shadow: 0 0 0.05rem rgb(85, 15, 15);
+}
+
+
+.divider{
+    width: 93%;
+    height: 0.6rem;
+    margin: 0 auto 2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.63);
+}
+
+.drop_down_address{
+    text-align: center;
+    font-size: 1rem !important;
+}
+
+#logo_top{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 8.8rem;
+    display: inline-block;
+    position: relative;
+}
+
+#hamburger_wrapper{
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    margin: 3rem 2rem 2rem 2rem;
+    right: 0;
+    z-index: 100;
+    /* This removes blue highlight */
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+#hamburger_wrapper span{
+    width: 80%;
+    height: .6rem;
+    border-radius: 0.1rem;
+    display: block;
+    margin: .7rem 0;
+    background-color: rgb(114, 112, 112);
+
+    /* transition properties */
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    -o-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+
+
+#hamburger_wrapper.open span:nth-child(1){
+    margin-left: 1rem;
+    transform-origin: top left;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hamburger_wrapper.open span:nth-child(2){
+    background-color:rgba(0, 0, 0, 0);
+}
+
+#hamburger_wrapper.open span:nth-child(3){
+    margin-left: 1rem;
+    transform-origin: bottom left;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.stop_body_scroll {
+    overflow: hidden;
+}
+
+.menu_content_container{
+    max-width: 90rem;
+    min-width: 45rem;
+    margin: 0 auto;
+}
+
+.menu_address{
+    padding-top: 1.35rem;
+    padding-bottom: 2.2rem;
+    font-size: 1.35rem;
+    font-style: italic;
+    letter-spacing: 0.125rem;
+}
+
+.social_media_nav_icons{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.drop_down_social_link{
+    text-decoration: none;
+    color: black;
+}
+
+.drop_down_icon{
+    font-size: 2.25rem;
+    padding: .5rem;
+}
+
+.drop_down_icon:hover{
+    cursor: pointer;
+    color: rgb(85, 15, 15);
+    transition: color .2s ease-in-out;
+    transition: text-shadow .4s linear;
+    text-shadow: 0 0 0.05rem black;
+}
+
+/* end navigation styles */
