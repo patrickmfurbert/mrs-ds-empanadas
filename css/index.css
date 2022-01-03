@@ -1,10 +1,21 @@
 #google_map{
     text-align: center;
-    margin: 8.5rem 0;
+    margin: 7.5rem 0;
+
 }
 
 #google_map_small{
     display: none;
+}
+
+#pr_flag{
+    min-width: 200px;
+    max-width: 200px;
+}
+
+#flag_container{
+    width: fit-content;
+    margin: 0 auto;
 }
 
 
@@ -18,7 +29,7 @@
 
     #google_map_small{
         text-align: center;
-        margin: 8.5rem 0;
+        margin: 7.5rem 0;
         display: block;
     }
 }

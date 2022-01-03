@@ -298,6 +298,13 @@ body{
     padding: 0 2rem;
 }
 
+#menu_description_index{
+    text-align:justify;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+
 .menu_section{
     height: fit-content;
     width: 100%;
