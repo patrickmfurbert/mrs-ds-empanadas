@@ -1,6 +1,6 @@
 #google_map{
     text-align: center;
-    margin: 7rem 0;
+    margin: 8.5rem 0;
 }
 
 #google_map_small{
@@ -18,7 +18,7 @@
 
     #google_map_small{
         text-align: center;
-        margin: 7rem 0;
+        margin: 8.5rem 0;
         display: block;
     }
 }
