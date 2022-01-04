@@ -11,7 +11,7 @@
     <!-- Font aweome script -->
     <script src="https://kit.fontawesome.com/776f196900.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/theme.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact_us.css">
     <title>Mrs D's Empanadas</title>
     <script src="./js/menu.js" defer></script>
 </head>
@@ -61,18 +61,39 @@
     <!-- End navagation -->
     
     <!-- Menu Content -->
-    <div class="menu_content_container">
+    <div id="contact_us_content_container">
 
         <section id="section_1">
             <p id="menu">Contact Us</p>
-            <p id="menu_description">We love sharing good food with great people. Homemade taste carefully designed to bring you a truly satisfying food experience from the Island of Puerto Rico. Fresh empanadas made daily & served with a tangy dipping sauce. </p>
 
         </section>
 
+        <section id="contact_us_s2">
 
+            <p id="contact_us_message">Any questions or concerns? Need an event catered with items from our menu? Or Just fiending for the empanadas? Whatever the reason feel free to drop us a line! </p>
 
+            <p class="contact_us_items">
+                197 Park Avenue Rochester, NY 14607
+            </p>
+            <p class="contact_us_items">
+                General Inquires: <a class="contact_us_links" href="mailto:mrsdempanadas@gmail.com">mrsdempanadas@gmail.com</a>
+            </p>
+            <p class="contact_us_items">
+                Place order: <a class="contact_us_links" href="tel:+5853519247">585.351.9247</a>
+            </p>
 
+            <p class="contact_us_items">Follow <a class="contact_us_links" href="https://www.instagram.com/mrs_d_empanadas/">@mrs_d_empanadas</a></p>
 
+            <form action="https://padr3ko.ddns.net/empanada_email" method="post">
+                <div class="contact_form">
+                    <input class="contact_form_input" type="text" name="form_name" id="form_name" placeholder="Name">
+                    <input class="contact_form_input" type="email" name="form_email" id="form_email" placeholder="Email">
+                    <input class="contact_form_input" type="text" name="form_phone" id="form_phone" placeholder="Phone Number">
+                    <textarea class="contact_form_input" name="form_text" id="form_text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input class="contact_form_input" type="submit" value="Send" id="contact_send">
+                </div>
+            </form>
+        </section>
 
 </body>
 </html>

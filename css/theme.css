@@ -47,6 +47,7 @@ body{
     z-index: -20;
     opacity: 0;
     transition: opacity .4s ease-in-out;
+    height: 0vh;
 }
 
 
@@ -246,7 +247,6 @@ body{
 }
 
 
-
 @keyframes fadeIn {
     0% {opacity:0.4;}
     100% {opacity:1;}
@@ -293,13 +293,13 @@ body{
 }
 
 #menu_description{
-    text-align:justify;
+    text-align: justify;
     font-size: 1.6rem;
     padding: 0 2rem;
 }
 
 #menu_description_index{
-    text-align:justify;
+    text-align: justify;
     font-size: 1.6rem;
     padding: 0 2rem;
     margin-top: 3rem;
